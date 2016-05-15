@@ -131,10 +131,12 @@ public class Controller {
 
                         values = new ArrayList<Double>();
                         a = Double.parseDouble(text.getText());
-                        for (double i = 1; i <= 4; i += STEP) {
+                        double i = 1;
+                         do{
                             double currValue = Math.sin(i) * a;
+                             i += STEP;
                             values.add(currValue);
-                        }
+                        }while (i <= 4);
 
                         JOptionPane.showMessageDialog(null, "Function calculated!");
                         break;
@@ -142,8 +144,10 @@ public class Controller {
 
                         values = new ArrayList<Double>();
                         a = Double.parseDouble(text.getText());
-                        for (double i = 1; i <= 4; i += STEP) {
+                        i = 1;
+                        while (i <= 4){
                             double currValue = a - 4 * i;
+                            i += STEP;
                             values.add(currValue);
                         }
 
