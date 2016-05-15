@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane fx:id="mainMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+      <Label layoutX="14.0" layoutY="55.0" text="Select A:" AnchorPane.bottomAnchor="328.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="540.0" AnchorPane.topAnchor="55.0" />
+      <MenuBar layoutX="8.0" layoutY="8.0" prefHeight="25.0" prefWidth="585.0" AnchorPane.bottomAnchor="367.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="8.0">
+         <menus>
+            <Menu fx:id="funcMenu" mnemonicParsing="false" text="Function">
+              <items>
+                <MenuItem fx:id="calc" mnemonicParsing="false" text="Calculate function" />
+                  <MenuItem fx:id="max" mnemonicParsing="false" text="Get max element" />
+                  <MenuItem fx:id="min" mnemonicParsing="false" text="Get min element" />
+                  <MenuItem fx:id="sumAll" mnemonicParsing="false" text="Sum all" />
+                  <MenuItem fx:id="multAll" mnemonicParsing="false" text="Multiply all" />
+                  <MenuItem fx:id="sumNeg" mnemonicParsing="false" text="Sum negative elements" />
+                  <MenuItem fx:id="multNeg" mnemonicParsing="false" text="Multiply negative elements" />
+                  <MenuItem fx:id="sumPos" mnemonicParsing="false" text="Sum positive elements" />
+                  <MenuItem fx:id="multPos" mnemonicParsing="false" text="Multiply positive elements" />
+                  <MenuItem fx:id="printPositive" mnemonicParsing="false" text="Print positive elements" />
+                  <MenuItem fx:id="printNegative" mnemonicParsing="false" text="Print negative elements" />
+                  <MenuItem fx:id="exit" mnemonicParsing="false" text="Exit" />
+                  <MenuItem fx:id="t" mnemonicParsing="false" text="" visible="false"/>
+              </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <TextField fx:id="text" layoutX="67.0" layoutY="51.0" promptText="Enter A" AnchorPane.bottomAnchor="324.0" AnchorPane.leftAnchor="67.0" AnchorPane.rightAnchor="384.0" AnchorPane.topAnchor="51.0" />
+      <TextArea  fx:id="out" layoutX="299.0" layoutY="39.0" prefHeight="49.0" prefWidth="202.0" promptText="Its out field" AnchorPane.bottomAnchor="312.0" AnchorPane.leftAnchor="299.0" AnchorPane.rightAnchor="99.0" AnchorPane.topAnchor="39.0" />
+      <Label layoutX="248.0" layoutY="55.0" text="Out:" AnchorPane.bottomAnchor="328.0" AnchorPane.leftAnchor="248.0" AnchorPane.rightAnchor="329.0" AnchorPane.topAnchor="55.0" />
+      <GridPane fx:id="arrayGrid" layoutX="15.0" layoutY="101.0" prefHeight="90.0" prefWidth="568.0" AnchorPane.bottomAnchor="209.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="101.0">
+
+      </GridPane>
+   </children>
+</AnchorPane>
